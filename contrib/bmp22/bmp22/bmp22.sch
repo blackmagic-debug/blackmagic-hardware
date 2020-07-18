@@ -1,0 +1,124 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 7850 3200 1200 700 
+U 5F21D67F
+F0 "Sheet5F21D67E" 50
+F1 "target_interface.sch" 50
+$EndSheet
+$Sheet
+S 1600 2850 2700 1050
+U 5F25207D
+F0 "Sheet5F25207C" 50
+F1 "mcu.sch" 50
+$EndSheet
+$Comp
+L Regulator_Linear:LP2985-3.3 U101
+U 1 1 5F42AA55
+P 5250 1550
+F 0 "U101" H 5000 1775 50  0000 C CNN
+F 1 "LP2985-3.3" H 5200 1800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5250 1875 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lp2985.pdf" H 5250 1550 50  0001 C CNN
+	1    5250 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0178
+U 1 1 5F42B067
+P 5250 1850
+F 0 "#PWR0178" H 5250 1600 50  0001 C CNN
+F 1 "GND" H 5250 1700 50  0000 C CNN
+F 2 "" H 5250 1850 50  0001 C CNN
+F 3 "" H 5250 1850 50  0001 C CNN
+	1    5250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C101
+U 1 1 5F42B588
+P 5750 1700
+F 0 "C101" H 5775 1800 50  0000 L CNN
+F 1 "C" H 5775 1600 50  0000 L CNN
+F 2 "" H 5788 1550 50  0001 C CNN
+F 3 "~" H 5750 1700 50  0001 C CNN
+	1    5750 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1550 5650 1550
+$Comp
+L power:GND #PWR0179
+U 1 1 5F42BA16
+P 5750 1850
+F 0 "#PWR0179" H 5750 1600 50  0001 C CNN
+F 1 "GND" H 5750 1700 50  0000 C CNN
+F 2 "" H 5750 1850 50  0001 C CNN
+F 3 "" H 5750 1850 50  0001 C CNN
+	1    5750 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1550 4750 1550
+Wire Wire Line
+	4750 1550 4750 1450
+Wire Wire Line
+	4750 1450 4850 1450
+$Comp
+L power:+5V #PWR0176
+U 1 1 5F42C346
+P 4750 1350
+F 0 "#PWR0176" H 4750 1200 50  0001 C CNN
+F 1 "+5V" H 4750 1490 50  0000 C CNN
+F 2 "" H 4750 1350 50  0001 C CNN
+F 3 "" H 4750 1350 50  0001 C CNN
+	1    4750 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1350 4750 1450
+Connection ~ 4750 1450
+$Comp
+L power:+3V3 #PWR0177
+U 1 1 5F42CC0D
+P 5750 1350
+F 0 "#PWR0177" H 5750 1200 50  0001 C CNN
+F 1 "+3V3" H 5750 1490 50  0000 C CNN
+F 2 "" H 5750 1350 50  0001 C CNN
+F 3 "" H 5750 1350 50  0001 C CNN
+	1    5750 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1350 5750 1450
+Wire Wire Line
+	5750 1450 5650 1450
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F42DA03
+P 4400 1350
+F 0 "#FLG0101" H 4400 1425 50  0001 C CNN
+F 1 "PWR_FLAG" H 4400 1500 50  0000 C CNN
+F 2 "" H 4400 1350 50  0001 C CNN
+F 3 "~" H 4400 1350 50  0001 C CNN
+	1    4400 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1350 4400 1450
+Wire Wire Line
+	4400 1450 4750 1450
+$EndSCHEMATC
