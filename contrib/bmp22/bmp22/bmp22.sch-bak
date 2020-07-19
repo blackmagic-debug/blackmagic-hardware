@@ -173,4 +173,114 @@ $EndComp
 Wire Wire Line
 	4400 1550 4400 1450
 Connection ~ 4400 1450
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5F19E2A2
+P 2500 5000
+F 0 "FID1" H 2585 5046 50  0000 L CNN
+F 1 "Fiducial" H 2585 4955 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 2500 5000 50  0001 C CNN
+F 3 "~" H 2500 5000 50  0001 C CNN
+	1    2500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5F19E943
+P 2500 5250
+F 0 "FID2" H 2585 5296 50  0000 L CNN
+F 1 "Fiducial" H 2585 5205 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 2500 5250 50  0001 C CNN
+F 3 "~" H 2500 5250 50  0001 C CNN
+	1    2500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5F21FF18
+P 2500 5500
+F 0 "FID3" H 2585 5546 50  0000 L CNN
+F 1 "Fiducial" H 2585 5455 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 2500 5500 50  0001 C CNN
+F 3 "~" H 2500 5500 50  0001 C CNN
+	1    2500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID4
+U 1 1 5F220B5C
+P 3500 5000
+F 0 "FID4" H 3585 5046 50  0000 L CNN
+F 1 "Fiducial" H 3585 4955 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 3500 5000 50  0001 C CNN
+F 3 "~" H 3500 5000 50  0001 C CNN
+	1    3500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID5
+U 1 1 5F220B62
+P 3500 5250
+F 0 "FID5" H 3585 5296 50  0000 L CNN
+F 1 "Fiducial" H 3585 5205 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 3500 5250 50  0001 C CNN
+F 3 "~" H 3500 5250 50  0001 C CNN
+	1    3500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID6
+U 1 1 5F220B68
+P 3500 5500
+F 0 "FID6" H 3585 5546 50  0000 L CNN
+F 1 "Fiducial" H 3585 5455 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 3500 5500 50  0001 C CNN
+F 3 "~" H 3500 5500 50  0001 C CNN
+	1    3500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F2A39DC
+P 2500 6000
+F 0 "H1" H 2600 6046 50  0000 L CNN
+F 1 "MountingHole" H 2600 5955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965" H 2500 6000 50  0001 C CNN
+F 3 "~" H 2500 6000 50  0001 C CNN
+	1    2500 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5F2A6C32
+P 2500 6200
+F 0 "H2" H 2600 6246 50  0000 L CNN
+F 1 "MountingHole" H 2600 6155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965" H 2500 6200 50  0001 C CNN
+F 3 "~" H 2500 6200 50  0001 C CNN
+	1    2500 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5F2A75CA
+P 3500 6000
+F 0 "H3" H 3600 6046 50  0000 L CNN
+F 1 "MountingHole" H 3600 5955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965" H 3500 6000 50  0001 C CNN
+F 3 "~" H 3500 6000 50  0001 C CNN
+	1    3500 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5F2A75D0
+P 3500 6200
+F 0 "H4" H 3600 6246 50  0000 L CNN
+F 1 "MountingHole" H 3600 6155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965" H 3500 6200 50  0001 C CNN
+F 3 "~" H 3500 6200 50  0001 C CNN
+	1    3500 6200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
