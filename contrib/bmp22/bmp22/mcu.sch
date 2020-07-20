@@ -667,8 +667,8 @@ NoConn ~ 8000 4750
 NoConn ~ 8000 4850
 Text Label 8000 4950 2    50   ~ 0
 LED1
-Text Label 7100 4850 2    50   ~ 0
-LED2
+Text Label 2650 6100 1    50   ~ 0
+LED2_NEW
 $Comp
 L Device:R R310
 U 1 1 5F2E1EF5
@@ -698,14 +698,11 @@ F 3 "" H 6200 5750 50  0001 C CNN
 $EndComp
 Text Label 8000 5250 2    50   ~ 0
 VBUS
-NoConn ~ 8000 5350
 NoConn ~ 8000 5450
 Text Label 1850 6250 1    50   ~ 0
 LED0
 Text Label 2150 6250 1    50   ~ 0
 LED1
-Text Label 2450 6250 1    50   ~ 0
-LED2
 $Comp
 L Device:LED D301
 U 1 1 5F2F0E27
@@ -819,12 +816,12 @@ $EndComp
 $Comp
 L Device:R R314
 U 1 1 5F2F8AD0
-P 2450 6400
-F 0 "R314" V 2530 6400 50  0000 C CNN
-F 1 "330" V 2450 6400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2380 6400 50  0001 C CNN
-F 3 "~" H 2450 6400 50  0001 C CNN
-	1    2450 6400
+P 2450 6250
+F 0 "R314" V 2530 6250 50  0000 C CNN
+F 1 "DNP" V 2450 6250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2380 6250 50  0001 C CNN
+F 3 "~" H 2450 6250 50  0001 C CNN
+	1    2450 6250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1204,28 +1201,8 @@ F 3 "~" H 7250 5050 50  0001 C CNN
 	1    7250 5050
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7400 5050 7500 5050
-$Comp
-L Device:R R318
-U 1 1 5F16E85C
-P 7250 4850
-F 0 "R318" V 7330 4850 50  0000 C CNN
-F 1 "DNP" V 7250 4850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7180 4850 50  0001 C CNN
-F 3 "~" H 7250 4850 50  0001 C CNN
-	1    7250 4850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7400 4850 7500 4850
-Wire Wire Line
-	7500 4850 7500 5050
-Connection ~ 7500 5050
-Wire Wire Line
-	7500 5050 8000 5050
-Text Label 7100 5400 2    50   ~ 0
-LED2
+Text Label 7850 5050 2    50   ~ 0
+LED2_OLD
 $Comp
 L Device:R R317
 U 1 1 5F17213D
@@ -1303,17 +1280,6 @@ Text Label 5750 4550 0    50   ~ 0
 B1
 Text Label 5750 4750 0    50   ~ 0
 B2
-$Comp
-L power:+3V3 #PWR0332
-U 1 1 5F192667
-P 5350 4300
-F 0 "#PWR0332" H 5350 4150 50  0001 C CNN
-F 1 "+3V3" H 5350 4440 50  0000 C CNN
-F 2 "" H 5350 4300 50  0001 C CNN
-F 3 "" H 5350 4300 50  0001 C CNN
-	1    5350 4300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5350 4300 5350 4350
 Wire Wire Line
@@ -1328,4 +1294,41 @@ Wire Wire Line
 Connection ~ 5350 4350
 Wire Wire Line
 	5350 4350 5350 4550
+Wire Wire Line
+	7400 5050 8000 5050
+Text Label 2450 6100 1    50   ~ 0
+LED2_OLD
+$Comp
+L Device:R R318
+U 1 1 5F1D4066
+P 2650 6250
+F 0 "R318" V 2730 6250 50  0000 C CNN
+F 1 "330" V 2650 6250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2580 6250 50  0001 C CNN
+F 3 "~" H 2650 6250 50  0001 C CNN
+	1    2650 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6550 2450 6450
+Wire Wire Line
+	2650 6400 2650 6450
+Wire Wire Line
+	2650 6450 2450 6450
+Connection ~ 2450 6450
+Wire Wire Line
+	2450 6450 2450 6400
+Text Label 8000 5350 2    50   ~ 0
+LED2_NEW
+$Comp
+L power:+3V3 #PWR0332
+U 1 1 5F192667
+P 5350 4300
+F 0 "#PWR0332" H 5350 4150 50  0001 C CNN
+F 1 "+3V3" H 5350 4440 50  0000 C CNN
+F 2 "" H 5350 4300 50  0001 C CNN
+F 3 "" H 5350 4300 50  0001 C CNN
+	1    5350 4300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
