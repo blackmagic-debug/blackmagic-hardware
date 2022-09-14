@@ -1,48 +1,28 @@
-# EMEB_BMP2
+Black Magic BMP2 Clone
+========================================
 
-![EMEB_BMP2](bmp2.jpg)
-#### EMEB_BMP2 assembled board
-
-### What is it?
-
-This is a revised layout for the original Black Magic Probe Mini from
-Blacksphere which provides connections for several styles of JTAG connectors.
-In addition to the 10-pin mini JTAG found on the original, it also has connections
-compatible with the original 20-pin 0.1" pitch JTAG connector as well as the
-ST-Link 6-pin 0.1" single row header.
-
-Other than the addition of these connectors and a revised layout that's more
-suited for DIY assembly, nothing has been changed. Original BMPM firmware is
-100% compatible.
-
-### Resources
-* [Black Magic Probe (BMP)](https://1bitsquared.com/collections/embedded-hardware/products/black-magic-probe)
- Latest BMP web site.
-
-### Design Resources
-* gEDA schematic: [bmp2.sch](bmp2.sch)
-* PCB layout: [bmp2.pcb](bmp2.pcb)
-* Schematic PDF: [bmp2.pdf](bmp2.pdf)
-* Bill of Materials: [bom.xls](bom.xls)
-* Gerbers (in OSHpark format): [bmp2.zip](bmp2.zip)
-
-## Status
-* 11-08-12 - Schematic revised and layout started.
-* 11-12-12 - PCB design sent to fab.
-* 12-13-12 - PCB back from fab, assembled, tested, works.
-* 03-11-13 - Posted gerbers.
-
-##### 
-**Last Updated**
-:2013-03-11
-
-##### 
-**Comments to:**
-[Eric Brombaugh](mailto:ebrombaugh1@cox.net)
+<img src="Resources\bmp2_front.jpg"  width=50% height=50%>
+<img src="Resources\bmp2_back.jpg"  width=50% height=50%>
 
 
+Black Magic BMP2 is similar to Black Magic Mini but provides connections for several styles of JTAG connectors.
+
+It is an easy-to-use board used for debugging embedded microcontrollers. It supports several targets from manufacturers such as STMicroelectronics, Atmel, Nordic Semiconductor, NXP, Texas Instruments, Freescale, Silicon Labs, Xilinx or Raspberry Pi.
+
+GNU debugger
+-------------------
+The Black Magic GNU DeBugger (GDB) server features:
+* Automatic target detection
+* No need for target specific configuration scripts
+* Easily scriptable
+* Interface to the host computer does not require special drivers
+* Full debugging functionality
+* Works with Windows, Linux and Mac environments
 
 
+Repository Contents
+-------------------
 
-
-
+* **/Production** - Gerber files, drill files, BOM, CPL file
+* **/Hardware** - KiCad PCB files, footprints library
+* **/Documents** - Schematics pdf
